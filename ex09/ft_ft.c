@@ -1,30 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_ft.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/21 00:21:44 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/21 00:27:00 by tairribe         ###   ########.fr       */
+/*   Created: 2022/05/21 00:31:43 by tairribe          #+#    #+#             */
+/*   Updated: 2022/05/21 01:42:01 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_putchar(char c)
+void	ft_ft(int *nbr)
 {
-	write(1, &c, 1);
-}
-
-void	ft_is_negative(int n)
-{
-	if (n < 0)
-	{
-		ft_putchar('N');
-	}
-	else
-	{
-		ft_putchar('P');
-	}
+	*nbr = 42;
 }

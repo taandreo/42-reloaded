@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/21 00:21:44 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/21 00:27:00 by tairribe         ###   ########.fr       */
+/*   Created: 2022/05/21 05:48:25 by tairribe          #+#    #+#             */
+/*   Updated: 2022/05/21 06:03:07 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,21 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_is_negative(int n)
+int	main(int argc, char **argv)
 {
-	if (n < 0)
+	int	i;
+	int	j;
+
+	i = 1;
+	while (i < argc)
 	{
-		ft_putchar('N');
-	}
-	else
-	{
-		ft_putchar('P');
+		j = 0;
+		while (argv[i][j] != '\0')
+		{
+			ft_putchar(argv[i][j]);
+			j++;
+		}
+		ft_putchar('\n');
+		i++;
 	}
 }

@@ -1,30 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_is_negative.c                                   :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/21 00:21:44 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/21 00:27:00 by tairribe         ###   ########.fr       */
+/*   Created: 2022/05/21 16:43:43 by tairribe          #+#    #+#             */
+/*   Updated: 2022/05/21 17:39:25 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <stdlib.h>
 
-void	ft_putchar(char c)
+int	*ft_range(int min, int max)
 {
-	write(1, &c, 1);
-}
+	int	*buffer;
+	int	i;
 
-void	ft_is_negative(int n)
-{
-	if (n < 0)
+	if (min >= max)
+		return (NULL);
+	if (max > 2147483647)
+		return (NULL);
+	buffer = malloc((max - min) * sizeof(int));
+	if (!buffer)
+		return (0);
+	i = 0;
+	while (min < max)
 	{
-		ft_putchar('N');
+		buffer[i] = min;
+		i++;
+		min++;
 	}
-	else
-	{
-		ft_putchar('P');
-	}
+	return (buffer);
 }
