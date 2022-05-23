@@ -6,16 +6,13 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/21 06:06:19 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/21 16:20:25 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/05/24 01:34:08 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 int	ft_strcmp(char *s1, char *s2)
 {

@@ -6,16 +6,13 @@
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/21 00:21:44 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/21 00:27:00 by tairribe         ###   ########.fr       */
+/*   Updated: 2022/05/24 01:31:54 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_is_negative(int n)
 {
