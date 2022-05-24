@@ -1,25 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_point.h                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tairribe <tairribe@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/19 19:43:50 by tairribe          #+#    #+#             */
-/*   Updated: 2022/05/24 01:42:46 by tairribe         ###   ########.fr       */
+/*   Created: 2022/05/24 02:08:16 by tairribe          #+#    #+#             */
+/*   Updated: 2022/05/24 02:08:37 by tairribe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_putchar(char c);
+#ifndef FT_POINT_H
+# define FT_POINT_H
 
-void	ft_print_alphabet(void)
+typedef struct t_point
 {
-	char	c;
+	int	x;
+	int	y;
+}	t_point;
 
-	c = 'a';
-	while (c <= 'z')
-	{
-		ft_putchar(c);
-		c++;
-	}
-}
+#endif
