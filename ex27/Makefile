@@ -1,7 +1,7 @@
 .PHONY: libft.a all clean fclean re
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I includes
+CFLAGS = -Wall -Wextra -Werror
 
 NAME = ft_display_file
 
@@ -13,10 +13,11 @@ $(NAME): $(SRCS)
 
 all: $(NAME)
 
-clean: 
+clean:
+	@echo -n
+	
+fclean:
 	rm -f $(NAME)
-
-fclean: clean
 
 re: fclean all
 
